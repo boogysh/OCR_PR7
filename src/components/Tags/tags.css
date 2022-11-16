@@ -1,0 +1,32 @@
+.tags_container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.tags{
+    display: flex;
+    width: fit-content;
+    min-width: 95px;
+    /* 10+10pad=115px */
+    padding:0 10px 0 10px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    color:var(--tags_color);
+    background-color:var(--primary);
+    border-radius: 10px;
+    margin-right: 10px;
+}
+@media all and (max-width:767px){
+    .tags{
+        font-size: 10px;
+        height: 18px;
+        border-radius: 5px;
+        min-width: 64px;
+        /* 10+10pad=84px */
+        margin-bottom: 5px;
+
+    }
+}

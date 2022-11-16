@@ -1,0 +1,36 @@
+ 
+ .flex_center_column{
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 200px; 
+
+}
+.container_content{
+    width: 100%;
+    max-width: 1023px;
+    height: auto;
+}
+@media all and (max-width:767px){
+    .flex_center_column{
+        margin-bottom: 0px;
+    }
+    .container_content{
+        min-height: 390px;
+    }
+}
+@media all and (max-width:370px){
+    .container_content{
+        min-height: 422px;
+    }
+    .flex_center_column{
+        margin-bottom: 20px;
+    }
+}
+
+
+    
+

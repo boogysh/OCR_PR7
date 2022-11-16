@@ -1,0 +1,33 @@
+.main_oneProduct{
+    width: 90%;
+    max-width: 1240px;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
+.dropDown_container{
+    display: flex;
+    width: 100%;
+    height: auto;
+    min-height: 220px;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+.separe{
+    display: flex;
+    width: 76px;
+    height:auto;
+    flex-shrink: 0;
+}
+@media all and (max-width:767px){
+    .dropDown_container{
+        flex-direction: column;
+        justify-content: initial;
+    }
+    .separe{
+        display: none;
+    }
+}
+
+
+
