@@ -7,7 +7,7 @@ function Error() {
   useEffect(() => {
     setTimeout(() => {
       setShow(true)
-    }, 500)
+    }, 400)
   }, [])
   return (
     show && (

@@ -9,10 +9,9 @@ import img_banner_home from '../../assets/img_banner_home.png'
 
 function Home() {
   const { data, isLoading, error } = UseFetch(`/data.json`)
-  if (error) {
-    return <Error500 />
-  }
-  else
+  
+  if (error) <Error500 />
+  
   return isLoading ? (
     <Loader />
   ) : (
@@ -33,5 +32,3 @@ function Home() {
   )
 }
 export default Home
-
-

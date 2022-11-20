@@ -7,11 +7,10 @@ import { UseFetch } from '../../hooks/useFetch'
 
 function LodgingDetails() {
   const { data, error } = UseFetch(`/data.json`)
-
   const { title, location, tags, host = [], rating } = data
-  if (error) {
-    return <Error500 />
-  }
+  
+  if (error) <Error500 />
+
   return (
     <section className="sectionName">
       <div>

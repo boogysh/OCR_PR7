@@ -10,12 +10,10 @@ import { UseFetch } from '../../hooks/useFetch'
 function OneLodging() {
   const { data, isLoading, error } = UseFetch(`/data.json`)
   const { pictures, description, equipments } = data
-  if (error) {
-    return <Error500 />
-  } // if (!data) {
-  else if (!pictures && !description && !equipments) {
-    return <Error404 />
-  }
+  
+  if (error) <Error500 />
+  else if (!pictures && !description && !equipments) <Error404 />
+  
   return isLoading ? (
     <Loader />
   ) : (

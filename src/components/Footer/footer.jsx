@@ -3,12 +3,12 @@ import '../Footer/footer.css'
 import logo_footer from '../../assets/logo-footer.png'
 
 function Footer() {
-  const [show, setShow] = useState(false)
+ const [show, setShow] = useState(false)
   useEffect(() => {
     setTimeout(() => {
       setShow(true)
-    }, 200)
-  }, [])
+    }, 400)
+  }, [show])
   return (
     show && (
       <footer>
@@ -19,5 +19,3 @@ function Footer() {
   )
 }
 export default Footer
-
-

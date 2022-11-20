@@ -2,7 +2,6 @@ import React from 'react'
 
 function DropDownContent({ content, classContent, display }) {
   return (
-    // <div className="body_content">
     <div className={`body_content ${display}`}>
       {Array.isArray(content) ? (
         <ul className="list_content">
