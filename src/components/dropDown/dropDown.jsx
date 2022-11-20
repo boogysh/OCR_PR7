@@ -18,17 +18,19 @@ function DropDown({ title, content }) {
   // SET CLASSES
   const [currentClassContent, setClassContent] = useState('p_content')
   const [currentClassTitle, setClassTitle] = useState('h3_DD')
+  const href = window.location.href.includes('/apropos')
   useEffect(() => {
-    if (window.location.href === 'http://localhost:3000/apropos')
-      return setClassContent('p_content_about') || setClassTitle('h3_DD_about')
-    else return setClassContent(currentClassContent) || setClassTitle('h3_DD')
-  }, [currentClassContent, currentClassTitle])
+    if (href) setClassContent('p_content_about') || setClassTitle('h3_DD_about')
+    else setClassContent(currentClassContent) || setClassTitle('h3_DD')
+  }, [currentClassContent, currentClassTitle, href])
   //  DROPDOWN
   return (
     <div className="dropDown_content">
       <DropDownTitle
-        title={title} classTitle={`${currentClassTitle}`}
-        toggle={toggleContent} arrow={topArrow}
+        title={title}
+        classTitle={`${currentClassTitle}`}
+        toggle={toggleContent}
+        arrow={topArrow}
       />
       <DropDownContent
         display={`${isOpen}`}
