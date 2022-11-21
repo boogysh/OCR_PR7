@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+body{
+  --cards_bg:#F7F7F7;
+  --primary:#FF6060;
+  --bg_color: #f7f7f7;
+  --h1_home: #FFFFFF;
+  --card_link:#FFFFFF;
+  --DD_bg_color:#f7f7f7;
+  --h3_DD:#FFF;
+  --h3_DD_about:#FFF;
+  --h3_footer_color:#FFF;
+  --slider_nr_color:#FFF;
+  --tags_color:#FFF;
+}

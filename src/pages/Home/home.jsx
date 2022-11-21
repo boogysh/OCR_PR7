@@ -10,7 +10,7 @@ import img_banner_home from '../../assets/img_banner_home.png'
 function Home() {
   const { data, isLoading, error } = UseFetch(`/data.json`)
   
-  if (error) <Error500 />
+  if (error) return <Error500 />
   
   return isLoading ? (
     <Loader />
