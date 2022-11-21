@@ -1,4 +1,4 @@
-.kasa_banner, 
+.banner, 
 .banner_about{
     display: flex;
     justify-content: center;
@@ -8,15 +8,13 @@
     height: 223px;
     position: relative;
 }
-.img_banner{
+.bannerImg, .bannerImg_about{
     object-fit: cover;
     width: 100%;
     height:223px;
     border-radius: 25px;
 }
-.img_banner_about{
-    height: 223px;
-}
+
 .h1_home{
     position: absolute;
     text-align: center;
@@ -27,19 +25,20 @@
     padding: 0 20px 0 20px;
 }
 @media all and (max-width:767px){
-    .kasa_banner{
+    .banner{
         height: 111px;
     }
     .banner_about{
         height: 223px;
         border-radius: 10px;
     }
-    .img_banner{
+    .bannerImg{
         height: 111px;
         border-radius: 10px;
     }
-    .img_banner_about{
+    .bannerImg_about{
         height: 223px;
+        border-radius: 10px;
     }
     .h1_home{
         font-size: 24px;

@@ -6,6 +6,7 @@ import img_banner from '../../assets/apropos_header_bg.png'
 import img_banner_mobile from '../../assets/apropos_header_bg_mobile.png'
 import './about.css'
 import '../../components/dropDownContent/dropDownContent.css'
+import '../../components/Banner/banner.css'
 
 function About() {
   const [matches, setMatches] = useState(
@@ -20,9 +21,7 @@ function About() {
   return (
     <main className="flex_center_column">
       {matches && <Banner src={img_banner} />}
-      {!matches && (
-        <Banner src={img_banner_mobile} addClass="img_banner_about" />
-      )}
+      {!matches && <Banner src={img_banner_mobile} />}
       <section className="container_content">
         <DropDown title="Fiabilité" content={aboutData.fiability} />
         <DropDown title="Respect" content={aboutData.respect} />
@@ -33,4 +32,3 @@ function About() {
   )
 }
 export default About
-
