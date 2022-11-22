@@ -12,7 +12,7 @@ function Header() {
           <img src={logo} alt="logo" className="logo_img"></img>
         </div>
       </Link>
-      <div>
+      <nav>
         <NavLink
           to="/"
           className={({ isActive }) => (isActive ? activeLink : normalLink)}
@@ -25,7 +25,7 @@ function Header() {
         >
           A propos
         </NavLink>
-      </div>
+      </nav>
     </div>
   )
 }
