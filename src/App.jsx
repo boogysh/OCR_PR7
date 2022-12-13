@@ -9,7 +9,7 @@ import OneLodging  from './pages/OneLodging/oneLodging.jsx';
 
 function App(){
   return(
-    <Router>
+    <Router basename="/kasa/">
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
