@@ -8,7 +8,7 @@ import Error500 from '../Error/error500'
 import img_banner_home from '../../assets/img_banner_home.png'
 
 function Home() {
-  const { data, isLoading, error } = UseFetch(`/data.json`)
+  const { data, isLoading, error } = UseFetch(`https://boogysh.github.io/kasa/data.json`)
   
   if (error) return <Error500 />
   

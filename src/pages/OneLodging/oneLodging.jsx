@@ -8,7 +8,7 @@ import './oneLodging.css'
 import { UseFetch } from '../../hooks/useFetch'
 
 function OneLodging() {
-  const { data, isLoading, error } = UseFetch(`/data.json`)
+  const { data, isLoading, error } = UseFetch(`https://boogysh.github.io/kasa/data.json`)
   const { pictures, description, equipments } = data
   if (error) return <Error500 />
   else if (!pictures && !description && !equipments) return <Error404 />
