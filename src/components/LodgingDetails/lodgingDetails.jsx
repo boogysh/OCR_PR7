@@ -6,7 +6,7 @@ import './lodgingDetails.css'
 import { UseFetch } from '../../hooks/useFetch'
 
 function LodgingDetails() {
-  const { data, error } = UseFetch(`/data.json`)
+  const { data, error } = UseFetch(`https://boogysh.github.io/kasa-api/data.json`)
   const { title, location, tags, host = [], rating } = data
   
   if (error) return <Error500 />
