@@ -12,9 +12,9 @@ function App(){
     <Router>
       <Header />
       <Routes>
-        <Route path="/kasa/" element={<Home />} />
-        <Route path="/kasa/apropos" element={<About />} />
-        <Route path="/kasa/logements/:id" element={<OneLodging />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/apropos" element={<About />} />
+        <Route path="/logements/:id" element={<OneLodging />} />
         <Route path="*" element={<Error404 />} />
       </Routes>
       <Footer />
